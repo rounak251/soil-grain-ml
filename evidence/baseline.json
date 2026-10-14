@@ -1,0 +1,96 @@
+{
+  "recorded_date": "2026-10-14",
+  "record_type": "Aggregate summary of a private Kaggle execution and scored submission",
+  "competition_url": "https://www.kaggle.com/competitions/soil-grain-size-from-photos",
+  "execution": {
+    "platform": "Kaggle",
+    "device": "cuda:0",
+    "gpu_name": "Tesla T4",
+    "script_elapsed_seconds": 57.97547680900004,
+    "runtime_scope": "Script feature extraction, nested validation, final fitting and output generation; excludes notebook startup/submission scoring overhead."
+  },
+  "data_counts": {
+    "train_samples": 24,
+    "test_samples": 10,
+    "train_photos": 127,
+    "test_photos": 35
+  },
+  "method": {
+    "encoder_finetuned": false,
+    "encoder_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "final_candidate": "linear-ridge-1",
+    "policy_changed_after_score": false
+  },
+  "aggregate_validation": {
+    "nested_sample_loocv_mean_emd": 44.134816634790546,
+    "same_outer_sample_training_median_mean_emd": 97.24831519305216,
+    "final_candidate_loocv_selection_score": 42.50983537896153,
+    "independent_metric_recompute_max_difference": 0.0,
+    "local_fitting_or_image_extraction_performed": false,
+    "local_artifact_metric_verification_performed": true,
+    "metric_range": 500.0
+  },
+  "official_submission": {
+    "source": "Authenticated Kaggle competitions submissions API response",
+    "competition": "soil-grain-size-from-photos",
+    "submission_ref": 57182966,
+    "file_name": "submission.csv",
+    "submitted_at_utc": "2026-10-14T12:58:26.770000+00:00",
+    "status": "COMPLETE",
+    "public_score": 66.01225,
+    "private_score": null,
+    "submission_sha256": "e644001adb02644b01113fd54cd8290147017d17bfea4415d84e5b11649b9010"
+  },
+  "public_minus_nested_emd": 21.87743336520945,
+  "camera_resolution_aggregate": {
+    "train": {
+      "camera_counts": {
+        "Motorola Edge 60 Fusion": 3,
+        "Motorola Edge": 69,
+        "Samsung A52": 55
+      },
+      "aspect_mismatch_photos": 0,
+      "resolution_corrected_photos": 124,
+      "resize_scale_range": [
+        0.1729022491349481,
+        1.0
+      ]
+    },
+    "test": {
+      "camera_counts": {
+        "iPhone 14": 14,
+        "iPhone 16": 21
+      },
+      "aspect_mismatch_photos": 0,
+      "resolution_corrected_photos": 0,
+      "resize_scale_range": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "schema_validation": {
+    "rows": 10,
+    "columns": 12,
+    "exact_sample_ids_and_order": true,
+    "finite_bounded_monotonic_and_endpoint_100": true
+  },
+  "reference_source_sha256": "358e45cde0d7d95a2142a816080b0906d2adc59a6d470c1ae629eb62ba1f4c14",
+  "executed_private_notebook_sha256": "2b3c521f57e1874db6b18f1f6f308a9de11f3878c4c313406d6934582583ebed",
+  "private_notebook_url": "https://www.kaggle.com/code/rounakchoudharynitp/soil-physical-resnet-ridge-gpu",
+  "evidence_access_note": "The authenticated submission receipt and full GPU artifacts were verified while preparing this release. Underlying notebook, logs, calibration rows, predictions, labels, and fitted arrays remain private. This public summary preserves aggregate values and hashes; it does not make those private artifacts independently inspectable.",
+  "validation_limits": "Only24 training samples; sample LOOCV does not verify test camera/collection-domain generalization. Public subset size and targets unavailable. Observed gap does not identify its cause. Private final score unavailable.",
+  "public_release_checks": {
+    "synthetic_tests_passed": 18,
+    "competition_fitting_rerun_for_public_packaging": false,
+    "original_soil_model_source_preserved": true,
+    "fixture_ids_and_calibrations": "Invented synthetic examples, not competition rows",
+    "notebook_builder": "Generated source identity, code compilation, input IDs, and private/offline GPU flags checked",
+    "local_test_environment": {
+      "torch": "2.13.0",
+      "numpy": "2.3.5",
+      "pandas": "2.3.3",
+      "Pillow": "12.0.0"
+    }
+  }
+}

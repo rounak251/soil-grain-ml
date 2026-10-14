@@ -1,0 +1,32 @@
+# User-supplied competition inputs and generated artifacts
+/data/
+/inputs/
+/outputs/
+/runs/
+/notebook/
+*.csv
+*.pt
+*.pth
+*.npy
+*.npz
+*.pkl
+*.joblib
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.log
+photo_metadata.json
+experiment_report.json
+kernel-metadata.json
+kaggle.json
+access_token
+.env
+.env.*
+
+# Local environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store

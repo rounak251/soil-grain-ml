@@ -1,0 +1,5 @@
+numpy>=1.26,<3
+pandas>=2.2,<3
+torch>=2.6,<3
+torchvision>=0.21,<1
+Pillow>=10,<12
